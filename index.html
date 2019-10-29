@@ -1,185 +1,72 @@
-* {
-  box-sizing: border-box;
-}
+<!doctype HTML>
 
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-}
+<head>
+  <link href="main.css" rel="stylesheet">
+  <title>Week 5: DIG103 - Typography & Colours</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Kristi" rel="stylesheet">
 
-.main {
-  width: 100%;
-}
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
 
-.header {
-  width: 100%;
-  padding: 50px;
-  background-color: #133046;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-}
+<body>
 
-.header h1 {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  letter-spacing: -8px;
-  font-size: 80px;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #EC9770;
-  padding-bottom: 10px;
-  font-weight: 700;
-}
+<div class="main">
 
-.header h4 {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 24px;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  margin-top: 20px;
-}
+  <div class="header">
+    <h1>Portabella & Co.</h1>
+    <h4>Home of the Cold Brew</h4>
+  </div>
 
-.menu {
-  width: 100%;
-  height: 50px;
-  background-color: #15959F;
-  display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center; /* vertical */
-}
+  <div class="menu">
+    <div class="button">Home</div>
+    <div class="button">Menu</div>
+    <div class="button">Coffee</div>
+    <div class="button">Contact</div>
+  </div>
 
-.button {
-  width: 120px;
-  height: 100%;
-  background-color: #15959F;
-  margin: 2px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
+  <div class="hero"></div>
 
-.button:hover {
-  background-color: rgb(76, 176, 176);
-}
+  <div class="column-container">
+    <div class="column"></div>
+    <div class="column">
+      <h5>Hours</h5>
+      <div class="line">
+        <div class="day">Mon-Fri:</div>
+        <div class="time">6am-4pm</div>
+      </div>
+      <div class="line">
+        <div class="day">Sat:</div>
+        <div class="time">7am-3pm</div>
+      </div>
+      <div class="line">
+        <div class="day">Sun:</div>
+        <div class="time">8am-6pm</div>
+      </div>
+    </div>
+  </div>
 
-.hero {
-  width: 100%;
-  height: 300px;
-  background-color: #F1E4B3;
-}
+  <div class="contact">
+    <h3>Say Hello To A <span>&nbsp;Cold&nbsp;</span> Brew</h3>
+    <div class="socialmediaicons">
+      <div class="icon"><i class="fab fa-facebook-f"></i></div>
+      <div class="icon"><i class="fab fa-instagram"></i></div>
+      <div class="icon"><i class="fab fa-twitter"></i></div>
+      <div class="icon"><i class="fas fa-envelope"></i></div>
+      <div class="icon"><i class="fas fa-phone"></i></div>
+    </div>
+  </div>
 
-.column-container {
-  width: 100%;
-  height: 300px;
-  display: flex;
-}
-
-.column {
-  width: 50%;
-  height: 100%;
-  background-color: #EC9770;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-}
-
-.column:hover {
-
-}
-
-.column h5 {
-  font-size: 28px;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid white;
-  padding-bottom: 8px;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  margin-bottom: 20px;
-}
-
-.line {
-  width: 50%;
-  display: flex;
-}
-
-.day {
-  width: 40%;
-}
-
-.contact {
-  width: 100%;
-  height: 300px;
-  background-color: #ffedba;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  letter-spacing: -3px;
-  word-spacing: -1px;
-}
-
-.contact h3 {
-  font-size: 40px;
-  color: #595959;
-  width: 60%;
-  border-bottom: 1px solid #EC9770;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-}
-
-.contact span {
-  color: #1c9186;
-}
-
-.socialmediaicons {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  color: #595959;
-}
-
-.icon {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-}
-
-.footer {
-  width: 100%;
-  /* height: 70px; */
-  background-color: #133046;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 30px;
-  font-size: 13px;
-}
-
-.footer-col {
-  width: 33.33%;
-  padding: 20px;
-}
+  <div class="footer">
+    <div class="footer-col">
+      <p>Portabella & Co. is a family run cold brew roasting house that has been in business for over 27 years.</p>
+    </div>
+    <div class="footer-col"> 27 Glover St. West End 4055</div>
+    <div class="footer-col">Copyright 2018</div>
+  </div>
 
 
+</div>
 
-/* comment */
+
+</body>
